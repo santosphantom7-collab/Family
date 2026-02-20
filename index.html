@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Family ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .family-intro {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      opacity: 0.9;
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .poem {
+      max-width: 750px;
+      margin: 20px auto 40px;
+      padding: 18px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.08);
+      text-align: center;
+      line-height: 1.7;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+      animation: fadeIn 1.2s ease;
+    }
+
+    .family-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .family-card {
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.25);
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .family-card:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+
+    .family-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .family-card p {
+      line-height: 1.7;
+      opacity: 0.95;
+    }
+
+    /* Mum theme */
+    .mum {
+      border: 1px solid rgba(255,215,150,0.35);
+      box-shadow: 0 0 25px rgba(255,200,100,0.25);
+    }
+
+    .mum h3 {
+      color: #ffd9a0;
+    }
+
+    /* Chris anime theme */
+    .chris {
+      background: linear-gradient(135deg, #000428, #004e92);
+      border: 1px solid rgba(0,180,255,0.5);
+      box-shadow: 0 0 25px rgba(0,180,255,0.35);
+      position: relative;
+    }
+
+    .chris::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(0,255,255,0.15), transparent 60%);
+      pointer-events: none;
+    }
+
+    .chris h3 {
+      color: #6ff;
+      text-shadow: 0 0 8px rgba(0,255,255,0.7);
+    }
+
+    /* Girls theme */
+    .girl.pink {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #3a1a1a;
+      box-shadow: 0 0 30px rgba(255,150,180,0.4);
+    }
+
+    .girl.lavender {
+      background: linear-gradient(135deg, #cdb4db, #ffc8dd);
+      color: #2d1738;
+      box-shadow: 0 0 30px rgba(200,160,255,0.4);
+    }
+
+    .girl h3 {
+      color: #fff;
+      text-shadow: 0 0 6px rgba(255,255,255,0.7);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.9rem;
+      }
+      .family-intro {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<section id="family">
+  <h2>My Beautiful Family ❤️</h2>
+
+  <p class="family-intro">
+    I wouldn’t be who I am today without you. Through every challenge, every
+    victory, every tear, and every laugh — you have stood by me. This is my
+    small way of saying thank you for the love, sacrifices, patience, and
+    strength you give me every single day.
+  </p>
+
+  <div class="poem">
+    Through stormy days and peaceful nights,<br>
+    You’ve been my home, my guiding light.<br>
+    In every step, in all I do,<br>
+    My strength is built from love of you.<br><br>
+
+    No words could ever truly say,<br>
+    How much you shape me every day.<br>
+    My heart, my roots, my history —<br>
+    My family, you are everything to me.
+  </div>
+
+  <div class="family-cards">
+
+    <div class="family-card mum">
+      <h3>To My Mum 💖</h3>
+      <p>
+        Mum, you are my first teacher, my greatest blessing, and my forever safe place.
+        Your love is the foundation of everything I am. Every sacrifice, every prayer,
+        and every warm embrace has shaped my life. I love you endlessly.
+      </p>
+    </div>
+
+    <div class="family-card chris">
+      <h3>To My Brother Chris ⚔️</h3>
+      <p>
+        Chris, you are my battle partner, my shield, and my reminder to stay strong.
+        Through every challenge, you’ve stood beside me like a true warrior.
+        Brotherhood forever. 🖤🔥
+      </p>
+    </div>
+
+    <div class="family-card girl pink">
+      <h3>To My Sister Makandi 🌸</h3>
+      <p>
+        Makandi, your gentle heart and beautiful soul bring so much light into my life.
+        Thank you for your love, kindness, and comfort. You are truly precious. 💕✨
+      </p>
+    </div>
+
+    <div class="family-card girl lavender">
+      <h3>To My Sister Courtney 🎀</h3>
+      <p>
+        Courtney, your laughter, energy, and joy brighten every moment.
+        Thank you for filling my life with happiness and unforgettable memories.
+        Keep shining always. 💖🌷
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
